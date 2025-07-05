@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mis Proyectos</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <h1>MI PORTAFOLIO</h1>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="Sobremi.html">SOBRE MÍ</a></li>
+        <li><a href="Servicios.html">SERVICIOS</a></li>
+        <li><a href="Proyectos.html">PROYECTOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="contacto" class="seccion contacto">
+      <h2>Contacto</h2>
+      <p class="intro-contacto">¿Te gustaría colaborar o tienes alguna duda? ¡Estoy feliz de leerte!</p>
+      
+      <form action="https://formsubmit.co/ariasmariacamila8@gmail.com" method="POST" class="formulario-contacto">
+        <input type="text" name="Nombre" placeholder="Tu nombre" required>
+        <input type="email" name="Email" placeholder="Tu correo" required>
+        <input type="text" name="Numero" placeholder="Tu número" required>
+        <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+        
+        <input type="hidden" name="_next" value="gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="boton">Enviar mensaje</button>
+      </form>
+
+      <div class="redes-sociales">
+        <a href="https://wa.me/573143567546" target="_blank" class="icono red-whatsapp" title="WhatsApp">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+          WhatsApp
+        </a>
+        
+        <a href="https://www.instagram.com/c.flower.a?igsh=MXMzcjFocThmYWR0dA==" target="_blank" class="icono red-instagram" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+          Instagram
+        </a>
+      </div>
+    </section>
+  
+  </body>
+</html>

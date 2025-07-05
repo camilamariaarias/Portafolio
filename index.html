@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>MI PORTAFOLIO</h1>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="Sobremi.html">SOBRE MÍ</a></li>
+        <li><a href="Servicios.html">SERVICIOS</a></li>
+        <li><a href="Proyectos.html">PROYECTOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="inicio" class="seccion inicio">
+      <div class="contenido-centrado">
+        <img src="yo.webp" alt="Foto de Camila Arias" class="foto-perfil" />
+        <h2>MARÍA CAMILA ARIAS</h2>
+        <p>Diseñadora</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>2025</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(ancla => {
+      ancla.addEventListener('click', function(e) {
+        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute('href'));
+        if (destino) {
+          destino.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
